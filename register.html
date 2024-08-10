@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css_style/style.css" />
+    <title>register</title>
+    <script src="่javaScript/register.js"></script>
+  </head>
+  <body>
+    <div>
+      <form action="" name="mainForm">
+        <div class="box1">
+          <div class="textbox">Select Your Tour Group Size</div>
+          <select name="dropList" id="dropList" size="2" style="width: 32em">
+            <option value="small">Small (10 -15 People)</option>
+            <option value="standard">Standard (35-40 People)</option>
+          </select>
+        </div>
+        <div class="box1">
+          <input type="checkbox" id="joinLand" name="joinLand" />
+          <label for="joinLand">I want to buy my plane ticket myself</label>
+        </div>
+        <div class="box1">
+          <label for="noPeople">Number of People in Your Group</label>
+          <input
+            type="text"
+            name="noPeople"
+            id="noPeople"
+            style="width: 32em; display: block"
+          />
+        </div>
+        <div class="box1">
+          <div>
+            <!-- <div class="textbox">Username</div> -->
+            <label for="firstname">Username</label>
+            <div>
+              <input
+                style="width: 31em"
+                type="text"
+                class="name"
+                id="name1"
+                name="name1"
+                placeholder="First Name and Last Name"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="box1">
+          <label for="phoneNum">Phone Number</label>
+          <div>
+            <input
+              type="text"
+              id="phoneNum"
+              name="phoneNum"
+              width="32em"
+              style="width: 32em"
+            />
+          </div>
+        </div>
+        <div style="margin-top: 24px; margin-left: 16px">
+          <input
+            class="button3"
+            type="button"
+            value="Confirm the Booking"
+            onclick="confirmBooking()"
+          />
+          <input
+            type="button"
+            class="button3"
+            value="Cancel the Booking"
+            onclick="window.location.href='index.html';"
+          />
+          <!-- <a class="button2" href="index.html">Cancel the Booking</a> -->
+        </div>
+      </form>
+    </div>
+
+    <p class="myName1">6430003421 นายกรภัทร์ ล้ำเลิศธรรม</p>
+  </body>
+</html>
